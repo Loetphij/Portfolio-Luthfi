@@ -1,0 +1,286 @@
+*,
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgba(122, 144, 255, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(24, 26, 55);
+    color: #fff;
+}
+
+.judulis{
+    margin-bottom: 10px;
+}
+
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: gray;
+}
+
+.ingfo-ungtama{ 
+    padding: 25px;
+    background-color: rgb(23, 35, 99);
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(194, 224, 254);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.judul {
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: rgb(3, 17, 44); 
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 50px;
+    align-items: center;
+}
+
+.foto-kece-gwehj{
+    width: 475px;
+    height: 475px;
+    object-fit: cover;
+    border: 5px solid rgb(65, 86, 187);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px rgb(71, 71, 71);
+}
+
+
+
+.projekt{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 50px;
+}
+
+.items{
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    background-color: rgb(61, 81, 181);
+    border: solid rgb(70, 78, 241);
+    box-shadow: 5px 5px 5px 5px rgb(103, 103, 103);
+    border-radius: 25px;
+    border: 2px solid black;
+    color: white;
+    box-shadow: 5px 5px 5px 5px rgb(70, 70, 70);
+}
+
+#Web-MBS{
+    width: 200px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.tabel-tentang-gwehj{
+    display: flex;
+    justify-content: center;    
+}
+
+th{
+    padding: 20px;
+}
+td{
+    padding: 20px; 
+}
+   
+table{
+    background-color: #fff;
+    border: 2px black solid;
+}
+
+.kontak-saya{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: 300px;
+    background-color: rgb(61, 81, 181);
+    border: solid rgb(70, 78, 241);
+    box-shadow: 5px 5px 5px 5px rgb(103, 103, 103);
+    border-radius: 25px;
+    color: white;
+    box-shadow: 5px 5px 5px 5px rgb(70, 70, 70);
+    padding: 50px;
+}
+
+
+button{
+    position: fixed;
+    display: block;
+    right: 25px;
+    bottom: 25px;
+}
+
+#site-footer{
+    background-color: rgb(24, 26, 55);
+    color: #fff;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .judul{
+        font-size: 50px;
+    }
+
+    nav {
+       flex-direction: column;
+       align-items: stretch;
+      }
+
+    .menu {
+        display: none;
+        flex-direction: row;
+        gap: 10px;
+        background: #1b1b3a;
+        padding: 10px;
+        width: 100%;
+    } 
+
+    .menu a {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .nav-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .judulie{
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 70px;
+    }
+
+    p{
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .foto-kece-gwehj{
+        width: 500px;
+        height: 500px;
+    }
+
+    
+
+    main {
+        padding: 10px;
+    }
+
+    .projekt{
+         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        justify-items: center; 
+        padding: 20px;
+    }   
+
+    section {
+        text-align: center;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    iframe {
+        width: 600px;
+        height: 600px;
+    }
+
+    .projekt {
+        display: grid; 
+        justify-content: center; 
+        grid-template-columns: 1fr; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        gap: 40px;
+    }
+
+    .items {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .tabel-tentang-gwehj {
+        overflow-x: auto;
+    }
+}
